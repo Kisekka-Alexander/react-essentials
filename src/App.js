@@ -1,5 +1,6 @@
 
 import './App.css';
+import gitdp from './gitdp.jpg';
 
 function Header(props){
   return(
@@ -13,6 +14,7 @@ function Main(props){
   return(
     <section>
       <p> We serve the most {props.adjective} food around.</p>
+      <img src="https://github.com/Kisekka-Alexander.png" height={200}/>
       <ul style={{textAlign: "left"}}>
         {props.dishes.map((dish) => 
         (<li key={dish.id}>{dish.title}</li>))}
