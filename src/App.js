@@ -1,21 +1,14 @@
-import './App.css';
-import React, {useState} from "react";
+import Header from './Components/Header'
 
 function App() {
-const [emotion , setEmotion] = useState("happy");
 return (
-  <>
-  <h1> Current emotion is {emotion}.</h1>
-  <button onClick={() => setEmotion("frustrated")}>Frustrated</button>
-  </>
-);
+  <div className='container'>
+       <Header/>
+  </div>
+)
 }
 
 export default App;
-
-
-
-
 
 
 
