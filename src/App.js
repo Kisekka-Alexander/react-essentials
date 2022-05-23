@@ -27,7 +27,9 @@ function App() {
     ]
 )
 
-
+const addTask = (task)=>{
+     console.log(task)
+}
 
 const onDelete = (id) =>{
 
@@ -40,7 +42,7 @@ const toggleReminder = (id) =>{
 return (
   <div className='container'>
        <Header/>
-       <AddTask/>
+       <AddTask onAdd={addTask}/>
        {tasks.length>0 ? <Tasks tasks={tasks} onDelete={onDelete} onToggle={toggleReminder}/>: ('No tasks to show')}
 
   </div>
