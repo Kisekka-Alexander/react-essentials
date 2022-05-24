@@ -11,6 +11,12 @@
       "text": "Meeting at school",
       "day": "Today",
       "reminder": true
+    },
+    {
+      "text": "learn",
+      "day": "tuesday",
+      "reminder": true,
+      "id": 3
     }
   ]
 }
